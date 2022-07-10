@@ -12,44 +12,109 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
-<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
     <title>Avoca</title>
 </head>
 
 <body>
     <section class="ferramentasDeBusca">
         <header>
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <div class="container-fluid">
-                          <a class="navbar-brand" href="#">Avoca</a>
-                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul class="navbar-nav">
-                              <li class="nav-item">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Avoca</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
-                              </li>
-                              <li class="nav-item">
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="#">Cadastro/Login</a>
-                              </li>
-                              <li class="nav-item">
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" href="#">Pacotes</a>
-                              </li>
-                              <li class="nav-item">
-                                    <a class="nav-link" href="#">História</a>
-                                </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </nav>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">História</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
         <!-- Inserir imagem de background -->
         <main></main>
+        <div class="boxConsultaDestino">
+            <div class="formsDestino">
+                <p>Passagensa aéreas</p>
+                <label for="idaVolta">
+                    Ida e Volta
+                    <input type="radio" value="idavolta" name="status" id="idavolta">
+                </label>
+                <label for="ida">
+                    Só Ida
+                    <input type="radio" value="ida" name="status" id="ida">
+                </label>
+            </div>
+
+            <div class="formsDestino">
+                    <input type="text" name="origem" placeholder="Origem" id="origem">
+                    <input type="text" name="destino" placeholder="Destino" id="destino">
+
+                <label for="areaDeClicagemIda">
+                    Ida
+                        <input type="date" name="ida" id="ida">
+                </label>
+                <label for="areaDeClicagemVolta">
+                        Volta
+                            <input type="date" name="volta" id="volta">
+                </label>
+                <label for="areaDeClicagemPassageiros">
+                            Passageiros
+                            <input type="number" name="passageiros" id="passageiros">
+                </label>
+                <input type="button" id="e" value="Pesquisar" onclick="pesquisar()">
+
+            </div>
+
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/Imagens/Fernando_de_Noronha_-_vista_aera.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/Imagens/Blog-Mala-de-Viagem-paris.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/Imagens/637128082973851781ZP.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
 
     </section>
 
     <section class="publicidade">
+
+        
     </section>
 
     <section class="vitrineDeHoteis">
